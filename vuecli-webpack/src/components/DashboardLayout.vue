@@ -4,10 +4,10 @@
      <v-list-item>
        <v-list-item-content>
          <v-list-item-title class="title">
-           Nama Kalian
+           Bastoto Aldinari Ginting
          </v-list-item-title>
          <v-list-item-subtitle>
-           NPM
+           180710014
          </v-list-item-subtitle>
        </v-list-item-content>
      </v-list-item>
@@ -41,6 +41,7 @@ export default {
      items: [
        { title: "Dashboard", to: "/" },
        { title: "GD", to: "/gd" },
+       { title: "UGD", to: "/ugd" },
      ],
    };
  },
