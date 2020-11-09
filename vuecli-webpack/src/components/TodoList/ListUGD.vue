@@ -11,13 +11,18 @@
          single-line
          hide-details
        ></v-text-field>
-       <v-select
-         v-model="Filter"
-         append-icon="mdi-magnify"
-         label="Priority"
-         single-line
-         hide-details
-       ></v-select>
+       <v-col
+        class="d-flex"
+        cols="12"
+        sm="6"
+      >
+        <v-select
+         v-model="search"
+          :items="['All priority', 'Penting', 'Biasa', 'Tidak penting']"
+          label="Priority"
+          outlined
+        ></v-select>
+      </v-col>
        <v-spacer></v-spacer>
        <v-btn color="success" dark @click="dialog = true">
          Tambah
@@ -34,7 +39,6 @@
        </template>
      </v-data-table>
    </v-card>
-
 
    <v-dialog v-model="dialog" persistent max-width="600px">
      <v-card>
